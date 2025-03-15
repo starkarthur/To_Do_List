@@ -8,14 +8,17 @@
 </head>
 <body>
     <main>
-        <form method = "POST" action="database.php">
-        <div class = "login-container">
-            <label><strong>Email :</strong></label>
+        <form method = "POST" action="#">
+        <div class = "input-container">
             <input 
-            type = "email" 
+            type = "text" 
             maxlength ="100"
-            name = "email"
+            name = "input"
+            placeholder="waht you have to do?"
             >
+        </div>
+        <div>
+
         </div>
         </form>
     </main>
@@ -26,6 +29,11 @@
     if(isset($_POST["input"])) {
     $input_daten = $_POST["input"];
     $sichere_daten = htmlspecialchars($input_daten);
+    }
+
+    if(isset($sichere_daten)) {
+        echo $sichere_daten;
+
     }
     ?>
 
