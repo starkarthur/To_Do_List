@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center
+}
+
+.login-container {
+    margin-bottom: 22em;
+input{
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 2em;
+    width: 25em;
+}
+
+label {
+    text-align: center;
+}
+
+}
